@@ -51,3 +51,35 @@ hugo new posts/categories/文章名称/index.md
 hugo server --bind=0.0.0.0 --buildDrafts
 ```
 
+
+
+### pm2管理服务
+
+使用pm2管理hugo服务
+
+创建文件`ecosystem.config.js`
+
+```js
+module.exports = {
+  apps: [
+    {
+      name: 'hugo-server',
+      script: 'hugo',
+      args: 'server --bind=0.0.0.0'
+    }
+  ]
+};
+```
+
+
+
+博客根目录下执行命令
+
+```bash
+# 启动
+pm2 start ecosystem.config.js
+
+# 关闭
+pm2 stop hugo-blog-server
+```
+
