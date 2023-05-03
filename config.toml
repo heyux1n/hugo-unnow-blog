@@ -125,7 +125,7 @@ theme = "FixIt"
   [params.search]
     enable = true
     # 搜索引擎的类型 ["lunr", "algolia", "fuse"]
-    type = "lunr"
+    type = "fuse"
     # 文章内容最长索引长度
     contentLength = 4000
     # 搜索框的占位提示语
@@ -813,7 +813,7 @@ theme = "FixIt"
 
   #  阅读进度条
   [params.readingProgress]
-    enable = true
+    enable = false
     # 可用值：["left", "right"]
     start = "left"
     # 可用值：["top", "bottom"]
