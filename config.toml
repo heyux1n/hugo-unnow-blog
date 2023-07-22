@@ -63,10 +63,10 @@ theme = "FixIt"
     [menu.main.params]
       icon = "fa-solid fa-tags"
   [[menu.main]]
-    identifier = "关于"
+    identifier = "about"
     pre = ""
     post = ""
-    name = "About"
+    name = "关于"
     url = "/about/"
     title = ""
     weight = 4
