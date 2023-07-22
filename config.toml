@@ -27,7 +27,7 @@ theme = "FixIt"
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "Posts"
+    name = "文章"
     url = "/posts/"
     # title will be shown when you hover on this menu link
     title = ""
@@ -46,7 +46,7 @@ theme = "FixIt"
     identifier = "categories"
     pre = ""
     post = ""
-    name = "Categories"
+    name = "分类"
     url = "/categories/"
     title = ""
     weight = 2
@@ -56,14 +56,14 @@ theme = "FixIt"
     identifier = "tags"
     pre = ""
     post = ""
-    name = "Tags"
+    name = "标签"
     url = "/tags/"
     title = ""
     weight = 3
     [menu.main.params]
       icon = "fa-solid fa-tags"
   [[menu.main]]
-    identifier = "about"
+    identifier = "关于"
     pre = ""
     post = ""
     name = "About"
@@ -82,9 +82,9 @@ theme = "FixIt"
   #  FixIt 主题版本
   version = "0.2.X" # 例如："0.2.X", "0.2.15", "v0.2.15" 等
   # 网站描述
-  description = "这是heyux1n的unnow博客"
+  description = "unnow，IT技术分享与探索。heyux1n的个人博客，致力于交流、分享、探索和记录的宗旨，欢迎来踩，相互交流，共同探索未知数，追寻心中的答案"
   # 网站关键词
-  keywords = ["unnow", "blog", "heyux1n", "未知"]
+  keywords = ["unnow", "未知数", "heyux1n", "探索未知数", "heyux1n个人博客"]
   # 网站默认主题样式 ["light", "dark", "auto"]
   defaultTheme = "auto"
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
@@ -107,7 +107,7 @@ theme = "FixIt"
   #  应用图标配置
   [params.app]
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题，覆盖默认标题
-    title = "unnow"
+    title = "未知数"
     # 是否隐藏网站图标资源链接
     noFavicon = false
     # 更现代的 SVG 网站图标，可替代旧的 .png 和 .ico 文件
