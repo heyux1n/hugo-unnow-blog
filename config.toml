@@ -8,8 +8,8 @@
 # See: https://fixit.lruihao.cn/documentation/basics/#menu-configuration
 # -------------------------------------------------------------------------------------
 
-title = "unnow blog"
-baseURL = "https://unnow.cn/"
+title = "unnow"
+baseURL = "https://www.unnow.cn/"
 # 设置默认的语言 ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "zh-cn"
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
@@ -84,7 +84,7 @@ theme = "FixIt"
   # 网站描述
   description = "unnow，IT技术分享与探索。heyux1n的个人博客，致力于交流、分享、探索和记录的宗旨，欢迎来踩，相互交流，共同探索未知数，追寻心中的答案"
   # 网站关键词
-  keywords = ["unnow", "未知数", "heyux1n", "探索未知数", "heyux1n个人博客"]
+  keywords = ["unnow", "heyux1n", "heyuxin", "unnow blog", "heyuxin’s blog", "heyux1n个人博客", "heyuxin个人博客", "何裕鑫"]
   # 网站默认主题样式 ["light", "dark", "auto"]
   defaultTheme = "auto"
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
@@ -97,7 +97,7 @@ theme = "FixIt"
   # 网站图片，用于 Open Graph 和 Twitter Cards
   images = ["/logo.png"]
   #  开启 PWA 支持
-  enablePWA = true
+  enablePWA = false
   #  是否自动显示外链图标
   externalIcon = false
   #  默认情况下，FixIt 只会在主页的 HTML 头中注入主题元标记
@@ -107,7 +107,7 @@ theme = "FixIt"
   #  应用图标配置
   [params.app]
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题，覆盖默认标题
-    title = "未知数"
+    title = "unnow"
     # 是否隐藏网站图标资源链接
     noFavicon = false
     # 更现代的 SVG 网站图标，可替代旧的 .png 和 .ico 文件
@@ -393,7 +393,7 @@ theme = "FixIt"
     # 许可协议信息（支持 HTML 格式）
     license = ''
     # 是否在文章页面显示原始 Markdown 文档链接
-    linkToMarkdown = true
+    linkToMarkdown = false
     #  是否在 RSS 中显示全文内容
     rssFullText = false
     #  页面样式 ["narrow", "normal", "wide", ...]
@@ -440,9 +440,9 @@ theme = "FixIt"
       # 是否显示代码块的复制按钮
       copy = true
       #  是否显示代码块的编辑按钮
-      edit = true
+      edit = false
       # 默认展开显示的代码行数
-      maxShownLines = 10
+      maxShownLines = 200
     #  文章编辑
     [params.page.edit]
       enable = false
@@ -675,11 +675,11 @@ theme = "FixIt"
     #  页面 SEO 配置
     [params.page.seo]
       # 图片 URL
-      images = []
+      images = ["/logo.jpg"]
       # 出版者信息
       [params.page.seo.publisher]
-        name = ""
-        logoUrl = ""
+        name = "unnow"
+        logoUrl = "/logo.jpg"
 
   #  TypeIt 配置
   [params.typeit]
@@ -749,9 +749,9 @@ theme = "FixIt"
   #  网站 SEO 配置
   [params.seo]
     # 图片 URL
-    image = ""
+    image = "/logo.jpg"
     # 缩略图 URL
-    thumbnailUrl = ""
+    thumbnailUrl = "/logo.jpg"
 
   #  网站分析配置
   [params.analytics]
@@ -769,7 +769,7 @@ theme = "FixIt"
 
   #  Cookie 许可配置
   [params.cookieconsent]
-    enable = true
+    enable = false
     # 用于 Cookie 许可横幅的文本字符串
     [params.cookieconsent.content]
       message = ""
@@ -802,14 +802,14 @@ theme = "FixIt"
     #  取决于作者邮箱，作者邮箱未设置则使用本地头像
     enable = true
     # Gravatar 主机，默认：“www.gravatar.com”
-    host = "www.gravatar.com" # ["cn.gravatar.com", "gravatar.loli.net", ...]
+    host = "www.unnow.cn" # ["cn.gravatar.com", "gravatar.loli.net", ...]
     style = "" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
 
   #  返回顶部
   [params.backToTop]
     enable = true
     # 在 b2t 按钮中显示滚动百分比
-    scrollpercent = false
+    scrollpercent = true
 
   #  阅读进度条
   [params.readingProgress]
@@ -829,7 +829,7 @@ theme = "FixIt"
     enable = true
     # 所有可用颜色：
     # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
-    color = "blue"
+    color = "black"
     # 所有可用主题：
     # ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple",
     # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]

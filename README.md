@@ -1,9 +1,11 @@
 # hugo-unnow-blog
-hugo搭建的静态博客
 
-关键词：`unnow`, `未知数`, `heyux1n`, `探索未知数`, `heyux1n个人博客`
+hugo 搭建的静态博客
 
-unnow，IT技术分享与探索。heyux1n的个人博客，致力于交流、分享、探索和记录的宗旨，欢迎来踩，相互交流，共同探索未知数，追寻心中的答案
+标题：`unnow`
+关键词：`unnow`, `heyux1n`, `heyuxin`, `unnow blog`, `heyuxin’s blog`, `heyux1n个人博客`, `heyuxin个人博客`, `何裕鑫`
+
+unnow，IT 技术分享与探索。heyux1n 的个人博客，致力于交流、分享、探索和记录的宗旨，欢迎来踩，相互交流，共同探索未知数，追寻心中的答案
 
 ## 项目初始化
 
@@ -19,8 +21,6 @@ git submodule update
 
 ```
 
-
-
 ### 子仓库
 
 #### themes
@@ -29,15 +29,11 @@ git submodule update
 
 > themes/FixIt
 
-
-
 #### posts
 
 单独存放[文章](https://github.com/heyux1n/unnow-blog-posts)
 
 > content/posts
-
-
 
 ### 更新子仓库
 
@@ -46,15 +42,9 @@ git submodule update
 git submodule update --remote --merge
 ```
 
+## hugo 博客
 
-
-
-
-## hugo博客
-
-基于hugo，需要安装hugo
-
-
+基于 hugo，需要安装 hugo
 
 ### 创建文章
 
@@ -67,8 +57,6 @@ hugo new posts/categories/文章名称/index.md
 # index.md同级目录下assets文件夹用于存放静态文件
 ```
 
-
-
 ### 开发模式启动
 
 ```bash
@@ -78,11 +66,9 @@ hugo new posts/categories/文章名称/index.md
 hugo server --bind=0.0.0.0 --buildDrafts
 ```
 
+### pm2 管理服务
 
-
-### pm2管理服务
-
-使用pm2管理hugo服务
+使用 pm2 管理 hugo 服务
 
 创建文件`ecosystem.config.js`
 
@@ -98,8 +84,6 @@ module.exports = {
 };
 ```
 
-
-
 博客根目录下执行命令
 
 ```bash
@@ -110,9 +94,7 @@ pm2 start ecosystem.config.js
 pm2 stop hugo-blog-server
 ```
 
-
-
-### nginx部署（⭐目前采用）
+### nginx 部署（⭐ 目前采用）
 
 ```bash
 # hugo编译静态代码至public目录下
@@ -120,4 +102,3 @@ hugo
 
 # nginx下配置https，并将ip访问、http访问重定向至https下的www网址下
 ```
-
