@@ -204,7 +204,8 @@ theme = "FixIt"
     #  公网安备信息，仅在中国使用（支持 HTML 格式）
     gov = ""
     #  ICP 备案信息，仅在中国使用（支持 HTML 格式）
-    icp = "京ICP备18032257号"
+    # icp = "京ICP备18032257号"
+	icp = "<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备18032257号</a>"
     # 许可协议信息（支持 HTML 格式）
     license = ''
     #  网站创立时间
